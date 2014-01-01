@@ -1,16 +1,18 @@
-Name:	      daemontools
-Summary:      DJB daemontools
-Version:      0.76
-Release:      0%{?dist}
-License:      Public Domain
-Group:	      System/Servers
-URL:          http://cr.yp.to/daemontools.html
-Source:	      http://cr.yp.to/daemontools/%{name}-%{version}.tar.gz
-Source1:      http://smarden.org/pape/djb/manpages/%{name}-%{version}-man.tar.gz
-Patch:	      daemontools-errno.patch
-Obsoletes:    daemontools-toaster
-Obsoletes:    daemontools-toaster-doc
-BuildRoot:    %{_topdir}/BUILDROOT/%{name}-%{version}-%{release}.%{_arch}
+Name:      daemontools
+Summary:   DJB daemontools
+Version:   0.76
+Release:   0%{?dist}
+License:   Public Domain
+Group:	   System/Servers
+Vendor:    QmailToaster
+Packager:  Eric Shubert <qmt-build@datamatters.us>
+URL:       http://cr.yp.to/daemontools.html
+Source:	   http://cr.yp.to/daemontools/%{name}-%{version}.tar.gz
+Source1:   http://smarden.org/pape/djb/manpages/%{name}-%{version}-man.tar.gz
+Patch:	   daemontools-errno.patch
+Obsoletes: daemontools-toaster
+Obsoletes: daemontools-toaster-doc
+BuildRoot: %{_topdir}/BUILDROOT/%{name}-%{version}-%{release}.%{_arch}
  
 %define cmddir        /command
 %define srvdir        /service
